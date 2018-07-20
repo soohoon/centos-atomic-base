@@ -68,7 +68,7 @@ rm -f /etc/systemd/system/multi-user.target.wants/rhsmcertd.service
 umount /run
 systemd-tmpfiles --create --boot
 
-rpm -e acl audit-libs binutils cpio cracklib cracklib-dicts cryptsetup-libs dbus dbus-libs device-mapper device-mapper-libs diffutils dracut elfutils-libs gzip hardlink kmod kmod-libs kpartx libcap-ng libpwquality libsemanage libuser libutempter pam procps-ng qrencode-libs shadow-utils systemd systemd-libs tar ustr util-linux xz qemu-guest-agent
+rpm -e acl audit-libs binutils cpio cracklib cracklib-dicts cryptsetup-libs dbus dbus-libs device-mapper device-mapper-libs diffutils dracut elfutils-libs gzip hardlink kmod kmod-libs kpartx libcap-ng libpwquality libsemanage libuser libutempter pam procps-ng qrencode-libs shadow-utils systemd systemd-libs tar ustr util-linux xz qemu-guest-agent elfutils-default-yama-scope
 
 #create /etc/yum.repos.d, microdnf needs it but does not provide it
 mkdir -p /etc/yum.repos.d/
